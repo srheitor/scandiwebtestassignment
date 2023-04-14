@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Product Add</h1>
+        
+    </div>
+    
+    <div class="line"></div>
+    <div class="productAddInputs">
+        <form action="add_products.php" id="product_form" method="post">
+            <label>SKU:</label><br>
+            <input type="text" id="sku" name="sku" required><br>
+            <label>Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label>Price($):</label><br>
+            <input type="number" id="price" name="price" required><br><br><br>
+            
+            <select name="productType" id="productType" name="productType" onChange="prodType(this.value);" required>
+                <option value="">Chose product type</option>
+                <option value="DVD-Disc">DVD</option>
+                <option value="Book">Book</option>
+                <option value="Furniture">Furniture</option>
+            </select><br><br>
+
+            <div class="fieldbox" id="dvd_disc_attributes" >
+              <label>Size: </label>
+              <input type="text" name="size" id="size" value="" >
+            </div>
+            
+            <div class="fieldbox" id="Book_attributes">
+              <label>Weight: </label>
+              <input type="text" name="weight" id="weight" value="" >
+            </div>
+            
+            <div class="fieldbox" id="Furniture_attributes">
+                <label>Height:</label><br>
+                    <input type="text" name="height" id="height"><br>
+                <label>Width:</label><br>
+                    <input type="text" name="width" id="width"><br>
+                <label>Lenght:</label><br>
+                    <input type="text" name="lenght" id="lenght"><br>
+            </div><br>
+            <div id="description">
+                <label>Description:</label><br>
+                <textarea row="6" style="width: 26em" name="description" id="description"></textarea>
+            </div>
+
+        <div class="buttons_add">
+            <br><Button type="submit">Save</Button>
+        </form>
+            <Button onclick="redirectCancelAdd()">Cancel</Button>
+        </div>
+    </div>
+    
+    
+    <div class="line"></div>
+    
+    <div class="footer">
+        <h3>Scandiweb Test Assignment</h3>
+    </div>
+</body>
+</html>

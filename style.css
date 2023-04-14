@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.line{
+    margin: auto;
+    width: 1000px;
+    height: 15px;
+    border-bottom: 2px solid black;
+    align-content: center;
+    }
+
+.header{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+     
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.products{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+.delete-checkbox{
+    display: flex;
+    flex-direction: start;
+    margin: 2px;
+}
+.productAddInputs{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    align-content: center;
+}
+
+.fieldbox{
+    display: none;
+    }
+
+.buttons{
+    position: absolute;
+    padding: 50px;
+    margin-left: 220px;
+    justify-content: space-between;
+}
